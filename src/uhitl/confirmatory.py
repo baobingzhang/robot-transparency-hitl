@@ -40,7 +40,9 @@ def perm_paired(diff, n=20000, seed=0):
     rng = np.random.default_rng(seed)
     obs = diff.mean()
     signs = rng.choice([-1.0, 1.0], (n, len(diff)))
-    p = float((np.abs((signs * diff).mean(1)) >= abs(obs) - 1e-12).mean())
+    # add-one estimator: a finite permutation test cannot certify p = 0
+    hits = int((np.abs((signs * diff).mean(1)) >= abs(obs) - 1e-12).sum())
+    p = float((hits + 1) / (n + 1))
     boot = rng.choice(diff, (10000, len(diff))).mean(1)
     return {
         "n": len(diff),
