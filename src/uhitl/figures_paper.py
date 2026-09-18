@@ -36,6 +36,14 @@ def s2():
     return d
 
 
+def stat_cfg(cfg, mech, n_boot=10000, seed=0):
+    """Mean and 95% bootstrap interval over supervisor configurations."""
+    v = cfg[mech].dropna().to_numpy()
+    rng = np.random.default_rng(seed)
+    boot = rng.choice(v, (n_boot, len(v))).mean(1)
+    return v.mean(), float(np.percentile(boot, 2.5)), float(np.percentile(boot, 97.5))
+
+
 def stat(df, mech, col):
     v = df[df["mechanism"] == mech][col].dropna().to_numpy()
     lo, hi = bootstrap_ci(v)
@@ -44,13 +52,18 @@ def stat(df, mech, col):
 
 # ------------------------------------------------------------------ Fig: main result (skill interaction)
 def fig_main_result():
-    """Horizontal bars: the condition names are long enough that they belong on the y axis."""
+    """Horizontal bars: the condition names are long enough that they belong on the y axis.
+
+    Intervals are bootstrapped over supervisor configurations, the unit every confirmatory test uses;
+    bootstrapping over runs would treat the five seeds of a configuration as independent.
+    """
     d = s2()
     keys = ORDER
     fig, axes = plt.subplots(1, 3, figsize=(7.4, 2.8), sharey=True, sharex=True)
     for ax, sk in zip(axes, ["worse", "okay", "better"]):
         sub = d[d["skill"] == sk]
-        m, lo, hi = zip(*[stat(sub, k, "gain") for k in keys])
+        cfg = sub.groupby(["group", "mechanism"])["gain"].mean().unstack()
+        m, lo, hi = zip(*[stat_cfg(cfg, k) for k in keys])
         ann = [
             (
                 pct(m[i], m[0])
@@ -297,7 +310,7 @@ def fig_request_diagnosis():
             fontsize=7.5,
         )
     ax.set_xticks(range(len(keys)), [STACK[k] for k in keys])
-    ax.set_ylabel("Normalised risk at the request")
+    ax.set_ylabel("Risk when the request is issued")
     ax.set_ylim(0, 1.0)
     ax.set_title("(a) The gate asks too early", fontsize=8.5)
     grid(ax)

@@ -202,6 +202,22 @@ def main():
         TAB / "confirmatory_attention_confound.csv", index=False
     )
 
+    # ---- 4b. within-tier tests at the configuration level (the unit every confirmatory test uses)
+    tier_rows = []
+    for tier in ("worse", "okay", "better"):
+        idx = skill[skill == tier].index
+        stats_t = []
+        for m in MECHS:
+            diff = (wide[("gain", m)] - wide[("gain", "C1_none")]).reindex(idx).to_numpy()
+            r = perm_paired(diff, n=20000, seed=3)
+            r.update({"tier": tier, "mechanism": m})
+            stats_t.append(r)
+        ps = holm([r["p_perm"] for r in stats_t])
+        for r, q in zip(stats_t, ps):
+            r["p_holm_within_tier"] = float(q)
+        tier_rows += stats_t
+    pd.DataFrame(tier_rows).to_csv(TAB / "confirmatory_by_skill_config_level.csv", index=False)
+
     # ---- 5. supervisor-skill moderation at configuration level (exploratory)
     mod_rows = []
     for m in ["C2_uncertainty", "C4_request", "C6_full"]:
@@ -231,10 +247,18 @@ def main():
         TAB / "confirmatory_skill_moderation.csv", index=False
     )
 
-    # ---- 6. C5 gate diagnosis: necessity of request-triggered vs self-initiated takeovers
+    # ---- 6. C5 gate diagnosis: when the robot asks, and whether the resulting take-overs were needed.
+    # The risk at the request must come from the per-step log: takeovers.csv records the risk at the
+    # moment control actually transfers, which is later by the supervisor's reaction delay.
     diag = []
     for mech in ("C4_request", "C5_thrifty", "C6_full"):
-        nec_req, nec_self, u_req = [], [], []
+        nec_req, nec_self, u_req, u_acc = [], [], [], []
+        for f in sorted((ROOT / "results/S2").glob(f"*/{mech}/seed*/steps.npz")):
+            z = np.load(f, allow_pickle=True)
+            st = pd.DataFrame(z["data"], columns=[str(c) for c in z["columns"]])
+            req = st[st["request"] == 1]
+            u_req += list(req["u"].dropna())
+            u_acc += list(req[req["trigger"] == 1]["u"].dropna())
         for f in sorted((ROOT / "results/S2").glob(f"*/{mech}/seed*/takeovers.csv")):
             t = pd.read_csv(f)
             if not len(t) or "source" not in t:
@@ -242,7 +266,6 @@ def main():
             nec = t["necessary"].astype(str).str.lower().eq("true")
             nec_req += list(nec[t["source"] == "request"])
             nec_self += list(nec[t["source"] == "self"])
-            u_req += list(t.loc[t["source"] == "request", "u"].dropna())
         diag.append(
             {
                 "mechanism": mech,
@@ -250,7 +273,9 @@ def main():
                 "necessity_request": float(np.mean(nec_req)),
                 "n_self_takeovers": len(nec_self),
                 "necessity_self": float(np.mean(nec_self)),
+                "n_requests": len(u_req),
                 "mean_u_at_request": float(np.mean(u_req)) if u_req else np.nan,
+                "mean_u_at_accepted_request": float(np.mean(u_acc)) if u_acc else np.nan,
             }
         )
     pd.DataFrame(diag).to_csv(TAB / "confirmatory_request_diagnosis.csv", index=False)

@@ -1,4 +1,4 @@
-mechanism,n_request_takeovers,necessity_request,n_self_takeovers,necessity_self,mean_u_at_request
-C4_request,0,,0,,
-C5_thrifty,0,,0,,
-C6_full,0,,0,,
+mechanism,n_request_takeovers,necessity_request,n_self_takeovers,necessity_self,n_requests,mean_u_at_request,mean_u_at_accepted_request
+C4_request,876,0.8573059360730594,3648,0.8555372807017544,3751,0.9500025824561522,0.9436926243858138
+C5_thrifty,2653,0.7953260459856766,2489,0.887906789875452,4919,0.42749455801422,0.3921618173805761
+C6_full,740,0.8797297297297297,3555,0.8742616033755274,3790,0.9505344596486248,0.951350052355876
