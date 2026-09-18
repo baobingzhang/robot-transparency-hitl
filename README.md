@@ -117,8 +117,3 @@ Rollouts are bit-reproducible only when PyTorch runs single-threaded; `uhitl.vis
 
 The code is released under the MIT Licence; see `LICENSE`. The robomimic datasets and the
 gym-hil environment are distributed by their own authors under their own terms.
-
-## Contact
-
-Baobing Zhang, School of Physics, Engineering and Computer Science, University of Hertfordshire
-(<b.zhang6@herts.ac.uk>), <https://github.com/baobingzhang>.
