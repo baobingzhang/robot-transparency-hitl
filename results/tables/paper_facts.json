@@ -1,0 +1,196 @@
+{
+ "design": {
+  "configs": 33,
+  "conditions": 7,
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "runs_S2": 1155,
+  "steps_per_run": 1200,
+  "start_success": 0.37
+ },
+ "gain_all": {
+  "C1_none": 0.322,
+  "C2_uncertainty": 0.325,
+  "C3_intent": 0.333,
+  "C4_request": 0.359,
+  "C5_thrifty": 0.298,
+  "C6_full": 0.367,
+  "HG_DAgger": 0.245
+ },
+ "negrun_all": {
+  "C1_none": 0.121,
+  "C2_uncertainty": 0.121,
+  "C3_intent": 0.103,
+  "C4_request": 0.067,
+  "C5_thrifty": 0.127,
+  "C6_full": 0.048,
+  "HG_DAgger": 0.17
+ },
+ "final_all": {
+  "C1_none": 0.692,
+  "C2_uncertainty": 0.695,
+  "C3_intent": 0.703,
+  "C4_request": 0.729,
+  "C5_thrifty": 0.668,
+  "C6_full": 0.737,
+  "HG_DAgger": 0.615
+ },
+ "control_all": {
+  "C1_none": 358.2,
+  "C2_uncertainty": 352.4,
+  "C3_intent": 370.9,
+  "C4_request": 353.7,
+  "C5_thrifty": 396.6,
+  "C6_full": 342.6,
+  "HG_DAgger": 254.2
+ },
+ "attend_all": {
+  "C1_none": 174.2,
+  "C2_uncertainty": 193.6,
+  "C3_intent": 152.3,
+  "C4_request": 136.2,
+  "C5_thrifty": 104.0,
+  "C6_full": 150.2,
+  "HG_DAgger": 301.1
+ },
+ "gain_better": {
+  "C1_none": 0.477,
+  "C2_uncertainty": 0.462,
+  "C3_intent": 0.473,
+  "C4_request": 0.507,
+  "C5_thrifty": 0.461,
+  "C6_full": 0.483,
+  "HG_DAgger": 0.349
+ },
+ "negrun_better": {
+  "C1_none": 0.0,
+  "C2_uncertainty": 0.018,
+  "C3_intent": 0.0,
+  "C4_request": 0.0,
+  "C5_thrifty": 0.0,
+  "C6_full": 0.0,
+  "HG_DAgger": 0.055
+ },
+ "final_better": {
+  "C1_none": 0.847,
+  "C2_uncertainty": 0.832,
+  "C3_intent": 0.843,
+  "C4_request": 0.877,
+  "C5_thrifty": 0.831,
+  "C6_full": 0.853,
+  "HG_DAgger": 0.719
+ },
+ "control_better": {
+  "C1_none": 346.0,
+  "C2_uncertainty": 339.1,
+  "C3_intent": 354.5,
+  "C4_request": 345.3,
+  "C5_thrifty": 388.8,
+  "C6_full": 332.2,
+  "HG_DAgger": 226.7
+ },
+ "attend_better": {
+  "C1_none": 197.5,
+  "C2_uncertainty": 220.1,
+  "C3_intent": 173.7,
+  "C4_request": 155.5,
+  "C5_thrifty": 118.7,
+  "C6_full": 180.9,
+  "HG_DAgger": 352.2
+ },
+ "gain_okay": {
+  "C1_none": 0.385,
+  "C2_uncertainty": 0.376,
+  "C3_intent": 0.379,
+  "C4_request": 0.372,
+  "C5_thrifty": 0.344,
+  "C6_full": 0.391,
+  "HG_DAgger": 0.311
+ },
+ "negrun_okay": {
+  "C1_none": 0.018,
+  "C2_uncertainty": 0.091,
+  "C3_intent": 0.073,
+  "C4_request": 0.036,
+  "C5_thrifty": 0.036,
+  "C6_full": 0.018,
+  "HG_DAgger": 0.109
+ },
+ "final_okay": {
+  "C1_none": 0.755,
+  "C2_uncertainty": 0.746,
+  "C3_intent": 0.749,
+  "C4_request": 0.742,
+  "C5_thrifty": 0.714,
+  "C6_full": 0.761,
+  "HG_DAgger": 0.681
+ },
+ "control_okay": {
+  "C1_none": 367.7,
+  "C2_uncertainty": 357.7,
+  "C3_intent": 384.9,
+  "C4_request": 364.9,
+  "C5_thrifty": 417.8,
+  "C6_full": 349.9,
+  "HG_DAgger": 244.7
+ },
+ "attend_okay": {
+  "C1_none": 156.1,
+  "C2_uncertainty": 175.8,
+  "C3_intent": 137.9,
+  "C4_request": 116.5,
+  "C5_thrifty": 84.5,
+  "C6_full": 122.5,
+  "HG_DAgger": 273.7
+ },
+ "gain_worse": {
+  "C1_none": 0.105,
+  "C2_uncertainty": 0.138,
+  "C3_intent": 0.147,
+  "C4_request": 0.199,
+  "C5_thrifty": 0.087,
+  "C6_full": 0.227,
+  "HG_DAgger": 0.076
+ },
+ "negrun_worse": {
+  "C1_none": 0.345,
+  "C2_uncertainty": 0.255,
+  "C3_intent": 0.236,
+  "C4_request": 0.164,
+  "C5_thrifty": 0.345,
+  "C6_full": 0.127,
+  "HG_DAgger": 0.345
+ },
+ "final_worse": {
+  "C1_none": 0.475,
+  "C2_uncertainty": 0.508,
+  "C3_intent": 0.517,
+  "C4_request": 0.569,
+  "C5_thrifty": 0.457,
+  "C6_full": 0.597,
+  "HG_DAgger": 0.446
+ },
+ "control_worse": {
+  "C1_none": 360.8,
+  "C2_uncertainty": 360.5,
+  "C3_intent": 373.3,
+  "C4_request": 350.9,
+  "C5_thrifty": 383.2,
+  "C6_full": 345.7,
+  "HG_DAgger": 291.3
+ },
+ "attend_worse": {
+  "C1_none": 169.0,
+  "C2_uncertainty": 184.9,
+  "C3_intent": 145.3,
+  "C4_request": 136.6,
+  "C5_thrifty": 108.6,
+  "C6_full": 147.1,
+  "HG_DAgger": 277.4
+ }
+}

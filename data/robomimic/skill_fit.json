@@ -1,0 +1,785 @@
+{
+  "fits": {
+    "better": {
+      "gain": 1.0,
+      "noise": 0.05,
+      "sim": {
+        "gain": 1.0,
+        "noise": 0.05,
+        "success_rate": 1.0,
+        "length": 20.9,
+        "path_ratio": 2.6557517051696777,
+        "dir_noise": 0.3845403035481771
+      }
+    },
+    "worse": {
+      "gain": 0.4,
+      "noise": 0.5,
+      "loss": 0.20756596370377658,
+      "sim": {
+        "gain": 0.4,
+        "noise": 0.5,
+        "success_rate": 0.9,
+        "length": 49.25925925925926,
+        "path_ratio": 4.41337251663208,
+        "dir_noise": 0.8806697969083432
+      },
+      "sim_ratio_to_better": {
+        "length": 2.3569023569023573,
+        "path_ratio": 1.661816693195009,
+        "dir_noise": 2.2901885414411667
+      },
+      "robomimic_ratio_to_better": {
+        "length": 2.0106530160486997,
+        "path_ratio": 1.4142620871139724,
+        "dir_noise": 3.4007093721175923
+      }
+    },
+    "okay": {
+      "gain": 0.8,
+      "noise": 0.5,
+      "loss": 0.13474848471681766,
+      "sim": {
+        "gain": 0.8,
+        "noise": 0.5,
+        "success_rate": 1.0,
+        "length": 28.966666666666665,
+        "path_ratio": 3.6411983966827393,
+        "dir_noise": 0.7460385004679362
+      },
+      "sim_ratio_to_better": {
+        "length": 1.3859649122807018,
+        "path_ratio": 1.371061304260784,
+        "dir_noise": 1.9400788255072172
+      },
+      "robomimic_ratio_to_better": {
+        "length": 1.2957941339236303,
+        "path_ratio": 1.3154184515977363,
+        "dir_noise": 2.7765425587024493
+      }
+    }
+  },
+  "grid": [
+    {
+      "gain": 0.3,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 45.666666666666664,
+      "path_ratio": 2.1165595054626465,
+      "dir_noise": 0.19766839543978373
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 43.733333333333334,
+      "path_ratio": 2.375807523727417,
+      "dir_noise": 0.3632822334766388
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 46.2,
+      "path_ratio": 2.5154848098754883,
+      "dir_noise": 0.6465082923571269
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 47.5,
+      "path_ratio": 3.336205244064331,
+      "dir_noise": 0.7872204780578613
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.4,
+      "success_rate": 0.8333333333333334,
+      "length": 52.4,
+      "path_ratio": 4.304209232330322,
+      "dir_noise": 0.8706182241439819
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.5,
+      "success_rate": 0.5666666666666667,
+      "length": 65.88235294117646,
+      "path_ratio": 5.6644062995910645,
+      "dir_noise": 0.8931669768165139
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.6,
+      "success_rate": 0.6333333333333333,
+      "length": 64.89473684210526,
+      "path_ratio": 6.379847526550293,
+      "dir_noise": 0.9576593637466431
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.7,
+      "success_rate": 0.23333333333333334,
+      "length": 77.42857142857143,
+      "path_ratio": 8.142696380615234,
+      "dir_noise": 0.975698036806924
+    },
+    {
+      "gain": 0.3,
+      "noise": 0.8,
+      "success_rate": 0.26666666666666666,
+      "length": 53.25,
+      "path_ratio": 6.059163570404053,
+      "dir_noise": 0.98384128510952
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 38.36666666666667,
+      "path_ratio": 2.270695924758911,
+      "dir_noise": 0.20746818383534749
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 39.56666666666667,
+      "path_ratio": 2.261411428451538,
+      "dir_noise": 0.32715336680412294
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 41.233333333333334,
+      "path_ratio": 2.5733697414398193,
+      "dir_noise": 0.590239570538203
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 39.43333333333333,
+      "path_ratio": 3.3397574424743652,
+      "dir_noise": 0.7530901789665222
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.4,
+      "success_rate": 0.9,
+      "length": 48.851851851851855,
+      "path_ratio": 4.436785697937012,
+      "dir_noise": 0.835211764883112
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.5,
+      "success_rate": 0.7666666666666667,
+      "length": 51.78260869565217,
+      "path_ratio": 4.816612720489502,
+      "dir_noise": 0.9179212036340133
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.6,
+      "success_rate": 0.5333333333333333,
+      "length": 62.625,
+      "path_ratio": 6.852577209472656,
+      "dir_noise": 0.9143460914492607
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.7,
+      "success_rate": 0.6,
+      "length": 57.388888888888886,
+      "path_ratio": 6.2146430015563965,
+      "dir_noise": 0.9369408090909322
+    },
+    {
+      "gain": 0.35,
+      "noise": 0.8,
+      "success_rate": 0.36666666666666664,
+      "length": 55.27272727272727,
+      "path_ratio": 7.265398025512695,
+      "dir_noise": 0.9368411140008406
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 35.0,
+      "path_ratio": 2.2793965339660645,
+      "dir_noise": 0.20962225993474323
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 36.266666666666666,
+      "path_ratio": 2.2904107570648193,
+      "dir_noise": 0.31670820713043213
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 35.96666666666667,
+      "path_ratio": 2.4706854820251465,
+      "dir_noise": 0.5163349290688832
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.3,
+      "success_rate": 0.9666666666666667,
+      "length": 39.96551724137931,
+      "path_ratio": 3.125244140625,
+      "dir_noise": 0.7077376184792354
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.4,
+      "success_rate": 0.9666666666666667,
+      "length": 46.689655172413794,
+      "path_ratio": 4.159120559692383,
+      "dir_noise": 0.828734839784688
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.5,
+      "success_rate": 0.9,
+      "length": 49.25925925925926,
+      "path_ratio": 4.41337251663208,
+      "dir_noise": 0.8806697969083432
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.6,
+      "success_rate": 0.5666666666666667,
+      "length": 56.05882352941177,
+      "path_ratio": 6.683414936065674,
+      "dir_noise": 0.9277379372540642
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.7,
+      "success_rate": 0.5666666666666667,
+      "length": 64.05882352941177,
+      "path_ratio": 7.066418170928955,
+      "dir_noise": 0.9380783333497889
+    },
+    {
+      "gain": 0.4,
+      "noise": 0.8,
+      "success_rate": 0.3333333333333333,
+      "length": 64.7,
+      "path_ratio": 6.872943878173828,
+      "dir_noise": 0.9537569761276246
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 32.4,
+      "path_ratio": 2.3751914501190186,
+      "dir_noise": 0.23662558396657307
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 32.46666666666667,
+      "path_ratio": 2.3721275329589844,
+      "dir_noise": 0.3110387921333313
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 33.5,
+      "path_ratio": 2.5531020164489746,
+      "dir_noise": 0.5030249893665314
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 34.13333333333333,
+      "path_ratio": 2.858776569366455,
+      "dir_noise": 0.6505794326464335
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.4,
+      "success_rate": 0.9666666666666667,
+      "length": 43.3448275862069,
+      "path_ratio": 3.660412073135376,
+      "dir_noise": 0.8014332754858609
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.5,
+      "success_rate": 0.8666666666666667,
+      "length": 47.53846153846154,
+      "path_ratio": 4.762041091918945,
+      "dir_noise": 0.8557637815292065
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.6,
+      "success_rate": 0.7,
+      "length": 43.80952380952381,
+      "path_ratio": 5.399938106536865,
+      "dir_noise": 0.8905771516618275
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.7,
+      "success_rate": 0.7,
+      "length": 55.142857142857146,
+      "path_ratio": 6.4154133796691895,
+      "dir_noise": 0.9143877228101095
+    },
+    {
+      "gain": 0.45,
+      "noise": 0.8,
+      "success_rate": 0.5333333333333333,
+      "length": 64.5625,
+      "path_ratio": 8.444475173950195,
+      "dir_noise": 0.9509491622447968
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 31.333333333333332,
+      "path_ratio": 2.2268686294555664,
+      "dir_noise": 0.22912899851799012
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 30.033333333333335,
+      "path_ratio": 2.4694550037384033,
+      "dir_noise": 0.31288771629333495
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 29.866666666666667,
+      "path_ratio": 2.6918718814849854,
+      "dir_noise": 0.5024707933266958
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 32.333333333333336,
+      "path_ratio": 2.722160577774048,
+      "dir_noise": 0.6329622507095337
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.4,
+      "success_rate": 0.9666666666666667,
+      "length": 36.724137931034484,
+      "path_ratio": 3.455505132675171,
+      "dir_noise": 0.7686363253100165
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.5,
+      "success_rate": 0.9333333333333333,
+      "length": 40.642857142857146,
+      "path_ratio": 3.735482692718506,
+      "dir_noise": 0.804588319999831
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.6,
+      "success_rate": 0.8666666666666667,
+      "length": 46.30769230769231,
+      "path_ratio": 4.863655090332031,
+      "dir_noise": 0.8850350861365979
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.7,
+      "success_rate": 0.6666666666666666,
+      "length": 45.95,
+      "path_ratio": 5.8369855880737305,
+      "dir_noise": 0.8988748967647553
+    },
+    {
+      "gain": 0.5,
+      "noise": 0.8,
+      "success_rate": 0.7,
+      "length": 52.76190476190476,
+      "path_ratio": 7.299849510192871,
+      "dir_noise": 0.9318670488539196
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 27.266666666666666,
+      "path_ratio": 2.3966736793518066,
+      "dir_noise": 0.2780026078224182
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 27.833333333333332,
+      "path_ratio": 2.2922868728637695,
+      "dir_noise": 0.3070100704828898
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 27.8,
+      "path_ratio": 2.6108334064483643,
+      "dir_noise": 0.4444905976454417
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 28.666666666666668,
+      "path_ratio": 2.8842461109161377,
+      "dir_noise": 0.5616043309370676
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.4,
+      "success_rate": 1.0,
+      "length": 31.7,
+      "path_ratio": 3.4129910469055176,
+      "dir_noise": 0.688504018386205
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.5,
+      "success_rate": 0.9,
+      "length": 37.48148148148148,
+      "path_ratio": 4.027027130126953,
+      "dir_noise": 0.7977752486864725
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.6,
+      "success_rate": 0.8333333333333334,
+      "length": 38.56,
+      "path_ratio": 4.928500175476074,
+      "dir_noise": 0.8457858061790466
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.7,
+      "success_rate": 0.8666666666666667,
+      "length": 50.5,
+      "path_ratio": 6.170694351196289,
+      "dir_noise": 0.8763439196806687
+    },
+    {
+      "gain": 0.6,
+      "noise": 0.8,
+      "success_rate": 0.7666666666666667,
+      "length": 53.34782608695652,
+      "path_ratio": 6.657214641571045,
+      "dir_noise": 0.9256497673366381
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 24.9,
+      "path_ratio": 2.5119917392730713,
+      "dir_noise": 0.3102414786815643
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 25.233333333333334,
+      "path_ratio": 2.4542715549468994,
+      "dir_noise": 0.3462981720765432
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 25.633333333333333,
+      "path_ratio": 2.47194504737854,
+      "dir_noise": 0.41035733620325726
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 26.0,
+      "path_ratio": 2.82967472076416,
+      "dir_noise": 0.554773602883021
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.4,
+      "success_rate": 1.0,
+      "length": 31.6,
+      "path_ratio": 3.5336923599243164,
+      "dir_noise": 0.6410080055395763
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.5,
+      "success_rate": 1.0,
+      "length": 36.46666666666667,
+      "path_ratio": 3.755340814590454,
+      "dir_noise": 0.7623416662216187
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.6,
+      "success_rate": 0.9333333333333333,
+      "length": 35.964285714285715,
+      "path_ratio": 4.59865140914917,
+      "dir_noise": 0.7990042737552098
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.7,
+      "success_rate": 0.9,
+      "length": 44.148148148148145,
+      "path_ratio": 5.935299396514893,
+      "dir_noise": 0.8480874653215762
+    },
+    {
+      "gain": 0.7,
+      "noise": 0.8,
+      "success_rate": 0.7,
+      "length": 44.857142857142854,
+      "path_ratio": 5.685725212097168,
+      "dir_noise": 0.8822643501417977
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 23.966666666666665,
+      "path_ratio": 2.4691433906555176,
+      "dir_noise": 0.32213175495465596
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 24.4,
+      "path_ratio": 2.4927330017089844,
+      "dir_noise": 0.34510557452837626
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 23.766666666666666,
+      "path_ratio": 2.643841505050659,
+      "dir_noise": 0.4351589580376943
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 24.7,
+      "path_ratio": 3.0762202739715576,
+      "dir_noise": 0.5647588253021241
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.4,
+      "success_rate": 1.0,
+      "length": 26.866666666666667,
+      "path_ratio": 3.0047807693481445,
+      "dir_noise": 0.6427977601687114
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.5,
+      "success_rate": 1.0,
+      "length": 28.966666666666665,
+      "path_ratio": 3.6411983966827393,
+      "dir_noise": 0.7460385004679362
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.6,
+      "success_rate": 0.9,
+      "length": 34.407407407407405,
+      "path_ratio": 4.247616767883301,
+      "dir_noise": 0.7772258939566435
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.7,
+      "success_rate": 0.9666666666666667,
+      "length": 44.96551724137931,
+      "path_ratio": 6.293200492858887,
+      "dir_noise": 0.8225995219987015
+    },
+    {
+      "gain": 0.8,
+      "noise": 0.8,
+      "success_rate": 0.8333333333333334,
+      "length": 40.24,
+      "path_ratio": 5.143292427062988,
+      "dir_noise": 0.8597584557533264
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 23.166666666666668,
+      "path_ratio": 2.5348329544067383,
+      "dir_noise": 0.3975648840268453
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 22.366666666666667,
+      "path_ratio": 2.6612157821655273,
+      "dir_noise": 0.4122235099474589
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 22.866666666666667,
+      "path_ratio": 2.458881378173828,
+      "dir_noise": 0.448628306388855
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 23.666666666666668,
+      "path_ratio": 2.9525651931762695,
+      "dir_noise": 0.5257161279519399
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.4,
+      "success_rate": 1.0,
+      "length": 26.966666666666665,
+      "path_ratio": 3.3467025756835938,
+      "dir_noise": 0.6065424144268036
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.5,
+      "success_rate": 0.9333333333333333,
+      "length": 30.035714285714285,
+      "path_ratio": 4.291792392730713,
+      "dir_noise": 0.7131922117301396
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.6,
+      "success_rate": 0.9666666666666667,
+      "length": 34.689655172413794,
+      "path_ratio": 4.6196513175964355,
+      "dir_noise": 0.7777035852958416
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.7,
+      "success_rate": 0.9333333333333333,
+      "length": 35.67857142857143,
+      "path_ratio": 4.828197956085205,
+      "dir_noise": 0.8015320982251849
+    },
+    {
+      "gain": 0.9,
+      "noise": 0.8,
+      "success_rate": 0.9,
+      "length": 41.03703703703704,
+      "path_ratio": 5.359372138977051,
+      "dir_noise": 0.8268184021667198
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.05,
+      "success_rate": 1.0,
+      "length": 20.9,
+      "path_ratio": 2.6557517051696777,
+      "dir_noise": 0.3845403035481771
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.1,
+      "success_rate": 1.0,
+      "length": 21.7,
+      "path_ratio": 2.578296422958374,
+      "dir_noise": 0.4115763028462728
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.2,
+      "success_rate": 1.0,
+      "length": 21.9,
+      "path_ratio": 2.688579559326172,
+      "dir_noise": 0.45849130153656004
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.3,
+      "success_rate": 1.0,
+      "length": 25.0,
+      "path_ratio": 3.0365493297576904,
+      "dir_noise": 0.5476708869139354
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.4,
+      "success_rate": 1.0,
+      "length": 25.066666666666666,
+      "path_ratio": 3.037543773651123,
+      "dir_noise": 0.5859237611293793
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.5,
+      "success_rate": 1.0,
+      "length": 31.533333333333335,
+      "path_ratio": 4.0140886306762695,
+      "dir_noise": 0.6639344235261281
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.6,
+      "success_rate": 0.9,
+      "length": 31.185185185185187,
+      "path_ratio": 4.380055904388428,
+      "dir_noise": 0.7219138432432104
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.7,
+      "success_rate": 0.9333333333333333,
+      "length": 32.25,
+      "path_ratio": 5.033278942108154,
+      "dir_noise": 0.786262286560876
+    },
+    {
+      "gain": 1.0,
+      "noise": 0.8,
+      "success_rate": 0.9666666666666667,
+      "length": 39.724137931034484,
+      "path_ratio": 5.865320205688477,
+      "dir_noise": 0.8075274002963099
+    }
+  ],
+  "episodes_per_config": 30
+}

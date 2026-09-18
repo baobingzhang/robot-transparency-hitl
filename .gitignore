@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+env/
+.venv/
+results/S1/
+results/S2/
+results/S3/
+results/S4/
+results/S6/
+results/processed/
+results/pretrain/checkpoint.pt
+data/robomimic/*.hdf5
+figures/
+*.log

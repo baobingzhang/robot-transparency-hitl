@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the associated manuscript.
+title: Robot transparency in human-in-the-loop robot learning
+abstract: >-
+  Implementation and analysis code for a study of uncertainty displays and active
+  intervention requests in human-in-the-loop reinforcement learning, evaluated
+  against a population of parameterised simulated supervisors.
+type: software
+license: MIT
+repository-code: https://github.com/baobingzhang/robot-transparency-hitl
+authors:
+  - family-names: Zhang
+    given-names: Baobing
+    affiliation: >-
+      School of Physics, Engineering and Computer Science, University of Hertfordshire
+    email: b.zhang6@herts.ac.uk
+  - family-names: Zheng
+    given-names: Yongjun
+    affiliation: >-
+      School of Physics, Engineering and Computer Science, University of Hertfordshire
+    email: y.zheng20@herts.ac.uk
+preferred-citation:
+  type: article
+  title: >-
+    Robot Transparency Reduces Supervision Cost and Worst-Case Risk Rather than
+    Average Performance
+  status: submitted
+  authors:
+    - family-names: Zhang
+      given-names: Baobing
+    - family-names: Zheng
+      given-names: Yongjun
